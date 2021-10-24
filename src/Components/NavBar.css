@@ -29,9 +29,14 @@
     align-items: center;
 }
   
-.fas fa-dumbbell {
+.fa-dumbbell {
     margin-left: 0.5rem;
     font-size: 1.8rem;
+}
+
+.fa-home{
+    margin-right: 0.5rem;
+    font-size: 1.4rem;
 }
   
 .nav-menu {

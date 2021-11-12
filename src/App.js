@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Components/pages/Home';
 import SignUp from './Components/pages/Sign-Up';
 import WorkoutPlans from './Components/pages/WorkoutPlans';
+import DietPlans from './Components/pages/DietPlans';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/sign-up' component={SignUp} />
-          <Route path='/workouplans' component={WorkoutPlans} />
+          <Route path='/workoutplans' component={WorkoutPlans} />
+          <Route path='/dietplans' component={DietPlans} />
         </Switch>
       </Router>
     </>

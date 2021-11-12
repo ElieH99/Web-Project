@@ -2,11 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 .home,
-.services,
-.products,
+.workoutplans,
+.dietplans,
 .sign-up {
   display: flex;
   height: 90vh;

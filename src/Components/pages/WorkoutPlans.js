@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css';
 
 
-function Work() {
+function WorkoutPlans() {
   return (
     <>
       <h1>What is your goal</h1>
@@ -10,4 +10,4 @@ function Work() {
   );
 }
 
-export default Work;
+export default WorkoutPlans;

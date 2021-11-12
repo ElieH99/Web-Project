@@ -1,0 +1,32 @@
+.workout-container {
+  background: url("C:\Users\User\Web-Project-1\src\images\workback.jpg") center
+    center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.workout-container > h1 {
+  color: rgb(0, 0, 0);
+  justify-content: left;
+  align-items: left;
+  font-size: 100x;
+  margin-top: -100px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}

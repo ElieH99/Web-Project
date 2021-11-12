@@ -41,8 +41,8 @@ return (
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                Services
+              <Link to='/work' className='nav-links' onClick={closeMobileMenu}>
+                Workout Plans
               </Link>
             </li>
             <li className='nav-item'>

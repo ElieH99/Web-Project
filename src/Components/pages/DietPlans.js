@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../App.css';
 import './DietPlans.css';
+
 
 
 function DietPlans() {
@@ -9,7 +11,7 @@ function DietPlans() {
     <div className='dietback'>
        <div className='diet-title'>
       <h1>A proper diet is as important as a proper workout!</h1>
-      <p>We recommend consulting a dieticien before choosing a diet</p>
+      <p>We recommend consulting a <Link to='/availabledieticien' className='dieticien'> dietecien</Link> before choosing a diet</p>
       </div>
       <div class="drow">
     <div class='dcolumn'>

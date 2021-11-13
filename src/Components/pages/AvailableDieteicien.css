@@ -1,0 +1,15 @@
+.avdic > h1 {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.avdic > p {
+  font-size: 22px;
+  padding: 10px;
+}
+.avdic > ul {
+  list-style: disc;
+  font-size: 18px;
+  padding: 10px;
+  padding-left: 40px;
+}

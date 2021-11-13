@@ -6,6 +6,7 @@ import Home from './Components/pages/Home';
 import SignUp from './Components/pages/Sign-Up';
 import WorkoutPlans from './Components/pages/WorkoutPlans';
 import DietPlans from './Components/pages/DietPlans';
+import AboutUs  from './Components/pages/AboutUs';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/sign-up' component={SignUp} />
           <Route path='/workoutplans' component={WorkoutPlans} />
           <Route path='/dietplans' component={DietPlans} />
+          <Route path='/aboutus' component={AboutUs} />
         </Switch>
       </Router>
     </>

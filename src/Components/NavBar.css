@@ -38,7 +38,20 @@
     margin-right: 0.5rem;
     font-size: 1.4rem;
 }
-  
+ .fa-running{
+    margin-right: 0.5rem;
+    font-size: 1.4rem;
+ } 
+
+
+ .fa-utensils{
+    margin-right: 0.5rem;
+    font-size: 1.4rem;
+ }
+ .fa-info-circle{
+    margin-right: 0.5rem;
+    font-size: 1.4rem;
+ }
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);

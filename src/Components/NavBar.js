@@ -42,17 +42,17 @@ return (
             </li>
             <li className='nav-item'>
               <Link to='/workoutplans' className='nav-links' onClick={closeMobileMenu}>
-                Workout Plans
+              <i class="fas fa-running"/> Workout Plans
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='/dietplans' className='nav-links'onClick={closeMobileMenu} >
-                Diet Plans
+              <i class="fas fa-utensils"/> Diet Plans
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='/aboutus' className='nav-links'onClick={closeMobileMenu} >
-                About Us
+              <i class="fas fa-info-circle"/> About Us
               </Link>
             </li>
 

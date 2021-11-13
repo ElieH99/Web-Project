@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../App.css';
 import './WorkoutPlans.css'
-
+import Trainers  from "../pages/Trainers";
 
 
 function WorkoutPlans() {
@@ -10,7 +11,7 @@ function WorkoutPlans() {
     <div className='workback'>
        <div className='workout-title'>
       <h1>Your journey starts here!</h1>
-      <p>We recommend checking with a professional trainer before choosing a plan</p>
+      <p>We recommend checking with a professional<Link to='/trainers' className='trainer'> trainer</Link> before choosing a plan</p>
       </div>
       <div class="row">
     <div class='column'>

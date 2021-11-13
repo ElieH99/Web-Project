@@ -7,6 +7,7 @@ import SignUp from './Components/pages/Sign-Up';
 import WorkoutPlans from './Components/pages/WorkoutPlans';
 import DietPlans from './Components/pages/DietPlans';
 import AboutUs  from './Components/pages/AboutUs';
+import Trainers  from "./Components/pages/Trainers";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/workoutplans' component={WorkoutPlans} />
           <Route path='/dietplans' component={DietPlans} />
           <Route path='/aboutus' component={AboutUs} />
+          <Route path='/trainers' component={Trainers} />
         </Switch>
       </Router>
     </>

@@ -33,6 +33,10 @@
     font: 500 1 rem 'Quicksand', sans-serif;
 
 }
+.fa-user-circle{
+    margin-left: 9.25rem;
+    font-size: 3rem;
+}
 
 .form > *:first-child{ 
     margin-top: 0;
@@ -50,7 +54,9 @@
 .form__message--success {
     color: var(--color-error);
 }
-
+.form__message--error{
+    color: var(--color-error);
+}
 .form__title{
     margin-bottom: 2rem;
     text-align: center;

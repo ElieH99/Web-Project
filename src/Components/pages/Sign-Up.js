@@ -61,6 +61,7 @@ function SignUp() {
     <div class="container">
         
     <form  class="form" id="login">
+        <i class="far fa-user-circle"></i>
         <h1 class="form__title">Login</h1>
         <div class="form__message form__message--error"></div>
         <div class="form__input-group">
@@ -101,7 +102,7 @@ function SignUp() {
         </div>
         <button class="form__button" type="submit">Continue</button>
         <p class="form__text">
-            <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            <a class="form__link" href="./sign-up" id="linkLogin">Already have an account? Sign in</a>
         </p>
     </form>
 

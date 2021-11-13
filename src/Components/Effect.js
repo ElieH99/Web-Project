@@ -12,8 +12,7 @@ function Effect() {
       <div className='effect-btns'>
         <Button className='btns' buttonStyle='btn--outline'
           buttonSize='btn--large'
-        >
-          Just do it!
+        >Just do it!
         </Button>
         <JButton className='btns' buttonStyle='btn--primary' buttonSize='btn--large' onClick={console.log('hey')}>
           Click me! <i className='far fa-play-circle' />

@@ -1,43 +1,45 @@
-.workout-title {
+.diet-title {
   position: relative;
 }
-.workback {
-  background: url("../../images/g2.jpg");
+
+.dietback {
+  background: url("../../images/dietback.jpg");
+  padding: 62px;
   background-position: center;
-  background-size: cover;
-  padding: 60px;
+  background-size: 36cm;
 }
-.workout-title > h1 {
-  color: rgb(231, 53, 53);
+
+.diet-title > h1 {
+  color: rgb(167, 29, 29);
   font-size: 50px;
 }
 
-.workout-title > p {
-  color: rgb(255, 255, 255);
+.diet-title > p {
+  color: rgb(247, 244, 244);
   font-size: 18px;
 }
 
-.row {
+.drow {
   padding-top: 10vh;
   padding-right: 10vh;
 }
 
-.row:after {
+.drow:after {
   padding: 40px;
   content: "";
   display: table;
   clear: both;
 }
 
-.column {
+.dcolumn {
   float: left;
   width: 33.33%;
   padding-bottom: 8vh;
   padding: 2vh;
 }
 
-.column > button {
-  background: url("../../images/butback.jpg");
+.dcolumn > button {
+  background: url("../../images/dback.jpg");
   background-size: cover;
   padding: 15px;
   border-color: rgb(0, 0, 0);
@@ -47,11 +49,11 @@
   width: auto;
 }
 
-.column > button > h2 {
+.dcolumn > button > h2 {
   font-size: 23px;
   text-decoration: underline;
 }
 
-.column > button > p {
+.dcolumn > button > p {
   font-size: 14px;
 }

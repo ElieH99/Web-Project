@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+import './Workout.css';
 
 function LoseWeight(){
     return(
@@ -17,7 +18,7 @@ function LoseWeight(){
         <li>High cable crossover :15rep /4 sets</li>
         <li>Alternative biceps curl: 15rep /4 sets</li>
         <li>Straight hummer curl: 15rep /4 sets</li>
-        <li>Cable ro[e biceps curl: 15rep /4 sets</li>
+        <li>Cable rope biceps curl: 15rep /4 sets</li>
         <li>Abs :20 rep/4 sets</li>
         </ul>
         <h2>Day 2: Leg Shoulders</h2>

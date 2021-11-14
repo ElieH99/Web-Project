@@ -1,53 +1,54 @@
 import React from 'react';
 import '../../App.css';
+import './Diets.css';
 
 function LowCarbo(){
     return(
         <>
-        <div className='lowcar'>
+        <div className='diet'>
             <h1>Low carbohydrate diet</h1>
             
-            <ul>
-                <li>Milk and Dairy Products <ul>
+            
+                <h2>Milk and Dairy Products</h2> <ul>
                     <li>High-fat milk</li>
                     <li>High-fat plain yogurt</li>
                     <li>High-fat cottage cheese</li>
-                    </ul></li>
+                    </ul>
                 
-                <li>Vegetables <ul>
+                <h2>Vegetables</h2> <ul>
                  <li>All fresh and frozen vegetables</li>  
-                    </ul></li>
-                <li> Fruit and Juices <ul>
+                    </ul>
+                <h2> Fruit and Juices</h2> <ul>
                     <li>All fresh and frozen fruit</li>
                     <li>fresh juice</li>
-                    </ul></li>
-                <li>Breads and Grains <ul>
+                    </ul>
+                <h2>Breads and Grains</h2> <ul>
                     <li>Whole-wheat products, including bread, pasta,</li>   
                     <li>Brown rice</li>
                     <li>Oats</li>
                     <li>Quinoa</li>
                     <li>Barley</li>
                     <li>Plain air-popped popcorn</li>
-                    </ul></li>
-                <li>Meats and Meat Substitutes <ul>
+                    </ul>
+                <h2>Meats and Meat Substitutes</h2> <ul>
                     <li>Chicken,turkey,beef, pork, and lamb</li>
                     <li>Fish</li>
                     <li>Eggs and egg whites</li>
                     <li>Dried beans and peas</li>
                     <li>Seeds</li>
-                    </ul></li>
-                <li>Fat <ul>
+                    </ul>
+                <h2>Fat</h2> <ul>
                     <li>Olive oil </li>
                     <li>Canola oil </li>
                     <li>Nut or seed oils </li>
-                    </ul></li>
-                <li>Beverages <ul>
+                    </ul>
+                <h2>Beverages</h2> <ul>
                     <li>Water</li>
                     <li>Sparkling water</li>
                     <li>Tea</li>
                     <li>Coffee</li>
-                    </ul></li>
-            </ul>
+                    </ul>
+            
         </div>
         
 </>

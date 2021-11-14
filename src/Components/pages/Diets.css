@@ -1,0 +1,26 @@
+.diet > h1 {
+  font-size: 35px;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+.diet > p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.diet > h2 {
+  border: groove;
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(26, 238, 90);
+  padding: 10px;
+  text-decoration: double;
+}
+
+.diet > ul {
+  font-size: 18px;
+  border: groove;
+  border-color: rgb(0, 0, 0);
+  padding: 20px;
+  list-style: square;
+}

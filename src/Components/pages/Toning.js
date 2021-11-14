@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../App.css';
+import './Workout.css';
+
 
 function Toning(){
     return(
@@ -7,7 +9,7 @@ function Toning(){
     <div className='workplan'>
         <h1>Toning workout</h1>
         <p> 3 days per week program</p>
-        <h2>Day 1: Chest Biceps</h2>
+        <h2>Day 1: Chest Biceps</h2> 
         <ul> 
         <li>Warmup 15 mins</li>
         <li>Db chest press : 15rep /3 sets</li>
@@ -17,7 +19,7 @@ function Toning(){
         <li>High cable crossover :15rep /3 sets</li>
         <li>Alternative biceps curl: 15rep /3 sets</li>
         <li>Straight hummer curl: 15rep /3 sets</li>
-        <li>Cable ro[e biceps curl: 15rep /3 sets</li>
+        <li>Cable rope biceps curl: 15rep /3 sets</li>
         <li>Abs :20 rep/4 sets</li>
         </ul>
         <h2>Day 2: Leg Shoulders</h2>

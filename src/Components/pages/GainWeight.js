@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+import './Workout.css';
 
 function GainWeight(){
     return(

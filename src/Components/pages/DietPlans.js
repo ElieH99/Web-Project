@@ -12,7 +12,7 @@ function DietPlans() {
     <div className='dietback'>
        <div className='diet-title'>
       <h1>A proper diet is as important as a proper workout!</h1>
-      <p>We recommend consulting a <Link to='/availabledieticien' className='dieticien'> dietitian</Link> before choosing a diet</p>
+      <p>We recommend consulting a <Link to='/availabledieticien' className='dieticien'> dietician</Link> before choosing a diet</p>
       </div>
       <div class="drow">
     <div class='dcolumn'>

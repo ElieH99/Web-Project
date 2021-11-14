@@ -17,6 +17,33 @@
 
 }
 
+ .team_card .share{
+    position: absolute;
+    top:1rem; 
+    align-items: center;
+    right: +300%;
+    display: flex;
+    flex-flow: column;
+}
+
+ .team_card:hover .share{
+    right: 0;
+}
+
+ .team_card .share a{
+    line-height: 2rem;
+    color:rgb(243, 239, 239);
+    font-size: 2rem;
+    margin:.5rem 1rem;
+}
+
+.team_card .share a:hover{
+    background:var(--black);
+    color:rgb(188, 123, 250);
+}
+
+
+
 .team__text{
     padding: 1rem;
 

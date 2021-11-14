@@ -2,21 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../App.css';
 import './DietPlans.css';
-
-
-
 function DietPlans() {
-  return (
-    <>
+  return(
+  <>
     <div className='dietback'>
        <div className='diet-title'>
       <h1>A proper diet is as important as a proper workout!</h1>
-      <p>We recommend consulting a <Link to='/availabledieticien' className='dieticien'> dietecien</Link> before choosing a diet</p>
+      <p>We recommend consulting a <Link to='/availabledieticien' className='dieticien'> dietitiann</Link> before choosing a diet</p>
       </div>
       <div class="drow">
     <div class='dcolumn'>
     <button>
-    <h2> Low calorie </h2>
+      <h2> Low calorie </h2>
     <p>A low calorie diet gives a target intake of calories each day.Provides a steady way to achieve weight loss</p>
     </button>
     </div>

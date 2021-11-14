@@ -9,6 +9,7 @@ import DietPlans from './Components/pages/DietPlans';
 import AboutUs  from './Components/pages/AboutUs';
 import Trainers  from "./Components/pages/Trainers";
 import AvailableDieticien  from './Components/pages/AvailableDieticien';
+import LowCalorie from './Components/pages/LowCalorie';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='/aboutus' component={AboutUs} />
           <Route path='/trainers' component={Trainers} />
           <Route path='/availabledieticien' component={AvailableDieticien} />
+          <Route path='/lowcalorie' component={LowCalorie}/>
         </Switch>
       </Router>
     </>

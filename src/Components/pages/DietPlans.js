@@ -48,7 +48,6 @@ function DietPlans() {
       </div>
 </div>
 
-
     </>
   );
 }

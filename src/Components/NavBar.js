@@ -57,12 +57,16 @@ return (
             </li>
 
             <li>
-              <Link to='/sign-up' className='nav-links-mobile'  onClick={closeMobileMenu}>
+              <Link
+                to='/sign-up'
+                className='nav-links-mobile'
+                onClick={closeMobileMenu}
+              >
                 Sign Up
               </Link>
             </li>
           </ul>
-          {button && <Button  buttonStyle='btn--outline'>Login</Button>}
+          {button && <Button buttonStyle='btn--outline'>Login</Button>}
         </div>
       </nav>
     </>

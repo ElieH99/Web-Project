@@ -25,7 +25,7 @@ function Trainers(){
                 </div>
                 <div class="team__text">
                     <p class="topline">
-                        Competent Workforce
+                        Compotent Workforce
                     </p>
                     <h1>Beyond</h1>
                     <p class="team_description">

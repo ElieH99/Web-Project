@@ -1,8 +1,6 @@
 import React from 'react';
 import "../pages/Sign-Up.css";
-
 function SignUp() {
-
     function setFormMessage(formElement, type, message) {
         const messageElement = formElement.querySelector(".form__message");
     
@@ -39,6 +37,9 @@ function SignUp() {
     
         loginForm.addEventListener("submit", e => {
             e.preventDefault();
+    
+            // Perform your AJAX/Fetch login
+    
             setFormMessage(loginForm, "error", "Invalid username/password combination");
         });
     
@@ -54,7 +55,6 @@ function SignUp() {
             });
         });
     });
-    
   return (
     <>
       <body class="body">
@@ -77,7 +77,7 @@ function SignUp() {
             <a href="#" class="form__link">Forget your password?</a>
         </p>
         <p class="form__text">
-            <a class="form__link"  href="./" id="linkCreateAccount">Don't have an account? Create an account</a>
+            <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create an account</a>
         </p>
     </form>
 

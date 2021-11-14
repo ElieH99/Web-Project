@@ -11,14 +11,14 @@ import Trainers  from "./Components/pages/Trainers";
 import AvailableDieticien  from './Components/pages/AvailableDieticien';
 
 
-export default function App() {
+function App() {
   return (
     <>
       <Router>
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/sign-up'  component={SignUp} />
+          <Route path='/sign-up' component={SignUp} />
           <Route path='/workoutplans' component={WorkoutPlans} />
           <Route path='/dietplans' component={DietPlans} />
           <Route path='/aboutus' component={AboutUs} />
@@ -30,4 +30,4 @@ export default function App() {
   );
 }
 
-
+export default App;

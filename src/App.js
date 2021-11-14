@@ -10,8 +10,10 @@ import AboutUs  from './Components/pages/AboutUs';
 import Trainers  from "./Components/pages/Trainers";
 import AvailableDieticien  from './Components/pages/AvailableDieticien';
 import LowCalorie from './Components/pages/LowCalorie';
-
-
+import LowCarbo from './Components/pages/LowCarbo';
+import LowFat from './Components/pages/LowFat';
+import Gaindiet from './Components/pages/GainDiet';
+import Balanced from './Components/pages/Balanced';
 
 function App() {
   return (
@@ -27,6 +29,10 @@ function App() {
           <Route path='/trainers' component={Trainers} />
           <Route path='/availabledieticien' component={AvailableDieticien} />
           <Route path='/lowcalorie' component={LowCalorie}/>
+          <Route path='/lowcarbo' component={LowCarbo}/>
+          <Route path='/gaindiet' component={Gaindiet}/>
+          <Route path='/balanced' component={Balanced}/>
+          <Route path='/lowfat' component={LowFat}/>
         </Switch>
       </Router>
     </>

@@ -5,8 +5,6 @@ import './DietPlans.css';
 import { useHistory } from 'react-router';
 
 
-
-
 function DietPlans() {
   let History= useHistory();
   return(

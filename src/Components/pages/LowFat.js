@@ -5,7 +5,7 @@ function LowFat(){
     return(
         <>
         <div className='lowfat'>
-            <h1>Low calorie diet</h1>
+            <h1>Low Fat diet</h1>
             
             <ul>
                 <li>Milk and Dairy Products <ul>

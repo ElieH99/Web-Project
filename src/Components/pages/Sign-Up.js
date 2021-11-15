@@ -74,7 +74,7 @@ function SignUp() {
         </div>
         <button class="form__button" type="submit">Continue</button>
         <p class="form__text">
-            <a href="#" class="form__link">Forget your password?</a>
+            <a href="./user" class="form__link">Forgot your password?</a>
         </p>
         <p class="form__text">
             <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create an account</a>

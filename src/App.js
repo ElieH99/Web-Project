@@ -19,6 +19,7 @@ import LoseWeight from './Components/pages/LoseWeight';
 import Toning from './Components/pages/Toning';
 import StayShape from './Components/pages/StayShape';
 import BodyBuilding from './Components/pages/BodyBuilding';
+import UserP from './Components/pages/UserP';
 
 
 
@@ -45,6 +46,7 @@ function App() {
           <Route path='/toning' component={Toning}/>
           <Route path='/stayshape' component={StayShape}/>
           <Route path='/bodybuilding' component={BodyBuilding}/>
+          <Route path='/user' component={UserP}/>
         </Switch>
       </Router>
     </>

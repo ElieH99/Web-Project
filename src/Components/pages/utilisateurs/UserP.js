@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../Components/pages/UserP.css"
+import "../../pages/utilisateurs/UserP.css"
 
 function UserP() {
     return (

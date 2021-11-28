@@ -10,7 +10,7 @@ function Footer() {
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
+            <Link to='/admin' className='social-logo'>
               All Round Fitness  <i class="fas fa-dumbbell"/>
             </Link>
           </div>

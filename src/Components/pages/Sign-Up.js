@@ -20,8 +20,8 @@ function SignUp() {
     }
     
     document.addEventListener("DOMContentLoaded", () => {
-        const loginForm = document.querySelector("#login");
-        const createAccountForm = document.querySelector("#createAccount");
+       const loginForm = document.querySelector("#login");
+       const createAccountForm = document.querySelector("#createAccount");
     
         document.querySelector("#linkCreateAccount").addEventListener("click", e => {
             e.preventDefault();
@@ -77,7 +77,7 @@ function SignUp() {
             <a href="./user" class="form__link">Forgot your password?</a>
         </p>
         <p class="form__text">
-            <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create an account</a>
+            <a class="form__link" href="./" id="linkCreateAccount" >Don't have an account? Create an account</a>
         </p>
     </form>
 

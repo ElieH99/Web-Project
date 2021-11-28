@@ -19,9 +19,11 @@ import LoseWeight from './Components/pages/LoseWeight';
 import Toning from './Components/pages/Toning';
 import StayShape from './Components/pages/StayShape';
 import BodyBuilding from './Components/pages/BodyBuilding';
-import UserP from './Components/pages/UserP';
-
-
+import UserP from './Components/pages/utilisateurs/UserP';
+import Admin from './Components/pages/admin/Admin';
+import Utilisateur from './Components/pages/admin/user';
+import Pros from './Components/pages/admin/pros';
+import createPost from './Components/pages/admin/createPost';
 
 function App() {
   return (
@@ -47,6 +49,10 @@ function App() {
           <Route path='/stayshape' component={StayShape}/>
           <Route path='/bodybuilding' component={BodyBuilding}/>
           <Route path='/user' component={UserP}/>
+          <Route path='/admin' component={Admin}/>
+          <Route path='/users' component={Utilisateur}/>
+          <Route path='/pros' component={Pros}/>
+          <Route path='/createPost' component={createPost}/>
         </Switch>
       </Router>
     </>

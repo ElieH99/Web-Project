@@ -3,9 +3,21 @@ import "../../pages/utilisateurs/UserP.css"
 
 function UserP() {
     return (
-        <>
-        <div class="co">
-          <div class="main">
+        <>  
+
+        <div class="user-wrapper">
+        <div class="left-sidebar">
+                <ul>
+                    <li><a href="/user"><i class="fas fa-user"/>My Profile</a></li>
+                    <li><a href="/edit-profile"><i class="fas fa-edit"/>Edit Profile</a></li>
+                    <li><a href="#"><i class="fas fa-walking"/>My WorkoutPlan</a></li>
+                    <li><a href="#"><i class="fas fa-apple-alt"/>My DietPlan</a></li>
+                    <li><a href=""><i class="fas fa-sign-out-alt"/>LogOut</a></li>
+                </ul>
+
+            </div>
+            
+          <div class="user-content">
             <h1>User 1</h1>
             <p>First Name:<input placeholder='FirstName'></input> <br/>
                Last Name:<input placeholder='LastName'></input> <br/>
@@ -35,8 +47,6 @@ function UserP() {
               <option value='Bulking'>Bulking</option>
             </select>
             <button>Confirm</button>
-
-            
             
             </p>
             

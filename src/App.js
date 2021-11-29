@@ -24,6 +24,7 @@ import Admin from './Components/pages/admin/Admin';
 import Utilisateur from './Components/pages/admin/user';
 import Pros from './Components/pages/admin/pros';
 import createPost from './Components/pages/admin/createPost';
+import editProfile from './Components/pages/utilisateurs/EditProfile';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
           <Route path='/users' component={Utilisateur}/>
           <Route path='/pros' component={Pros}/>
           <Route path='/createPost' component={createPost}/>
+          <Route path='/edit-profile' component={editProfile}/>
         </Switch>
       </Router>
     </>

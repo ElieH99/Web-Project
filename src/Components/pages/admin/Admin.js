@@ -15,17 +15,15 @@ function Admin (){
             </div>
 
             <div class="admin-content">
-                <div class="button-group">
-                <Bouton className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
-          Add Plan 
-        </Bouton>
+                {/* <div class="button-group">
         <Bouton1 className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
           Remove Plan
         </Bouton1>
-                </div>
+                </div> */}
 
                 <div class="content">
                     <h2 class="page-title">Manage Plans</h2>
+                    <br/>
                     <h3 class="page-title">Manage WorkoutPlans</h3>
                     <table>
                         
@@ -42,7 +40,7 @@ function Admin (){
                                 <td>Cristiannaa</td>
                                 <td><a href="#" class="edit">edit</a></td>
                                 <td><a href="#" class="delete">delete</a></td>
-                                <td><a href="#" class="publish">publish</a></td>
+                                <td><a href="#" class="publish">publish/hide</a></td>
                             </tr>
                             <tr>
                                 <td>2</td>
@@ -50,7 +48,7 @@ function Admin (){
                                 <td>Marvin</td>
                                 <td><a href="#" class="edit">edit</a></td>
                                 <td><a href="#" class="delete">delete</a></td>
-                                <td><a href="#" class="publish">publish</a></td>
+                                <td><a href="#" class="publish">publish/hide</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -75,7 +73,7 @@ function Admin (){
                                 <td>Cristiannaa</td>
                                 <td><a href="#" class="edit">edit</a></td>
                                 <td><a href="#" class="delete">delete</a></td>
-                                <td><a href="#" class="publish">publish</a></td>
+                                <td><a href="#" class="publish">publish/hide</a></td>
                             </tr>
                             <tr>
                                 <td>2</td>
@@ -83,7 +81,7 @@ function Admin (){
                                 <td>Marvin</td>
                                 <td><a href="#" class="edit">edit</a></td>
                                 <td><a href="#" class="delete">delete</a></td>
-                                <td><a href="#" class="publish">publish</a></td>
+                                <td><a href="#" class="publish">publish/hide</a></td>
                             </tr>
                         </tbody>
                     </table>

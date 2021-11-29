@@ -15,37 +15,62 @@ function Pros (){
             </div>
 
             <div class="admin-content">
-                <div class="button-group">
-        <Bouton className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
-          Remove User
-        </Bouton>
-                </div>
-
                 <div class="content">
                     <h2 class="page-title">Manage Trainers/Dieticians</h2>
+                    <h3>Manage Dieticians</h3><br/>
                     <table>
                         <thead>
                             <th>N</th>
-                            <th>Title</th>
-                            <th>User</th>
-                            <th colSpan="3">Action</th>
+                            <th>Last Name</th>
+                            <th>First Name</th>
+                            <th>Email address</th>
+                            <th colSpan="2">Action</th>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Morinho</td>
-                                <td>Cristiannaa</td>
+                                <td>Guardiola</td>
+                                <td>Pep</td>
+                                <td>pepnumber1@gmail.com </td>
                                 <td><a href="#" class="edit">ban</a></td>
-                                <td><a href="#" class="delete">bonus</a></td>
                                 <td><a href="#" class="publish">remove</a></td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>Guardiola</td>
+                                <td>Mourad</td>
                                 <td>Marvin</td>
-                                <td><a href="#" class="edit">edit</a></td>
-                                <td><a href="#" class="delete">delete</a></td>
-                                <td><a href="#" class="publish">publish</a></td>
+                                <td>okokokokokok@gmai.com</td>
+                                <td><a href="#" class="edit">ban</a></td>
+                                <td><a href="#" class="publish">remove</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br/><br/>
+                    <h3>Manage Trainers</h3><br/>
+                    <table>
+                        <thead>
+                            <th>N</th>
+                            <th>Last Name</th>
+                            <th>First Name</th>
+                            <th>Email address</th>
+                            <th colSpan="2">Action</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Guardiola</td>
+                                <td>Pep</td>
+                                <td>pepnumber1@gmail.com </td>
+                                <td><a href="#" class="edit">ban</a></td>
+                                <td><a href="#" class="publish">remove</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mourad</td>
+                                <td>Marvin</td>
+                                <td>okokokokokok@gmai.com</td>
+                                <td><a href="#" class="edit">ban</a></td>
+                                <td><a href="#" class="publish">remove</a></td>
                             </tr>
                         </tbody>
                     </table>

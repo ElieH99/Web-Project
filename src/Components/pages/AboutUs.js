@@ -13,6 +13,7 @@ function AboutUs() {
                 We exist to create the tools that help people unlock their full, incredible potential and put their ideas into action.
                 Be all that you imagined you could be. Be a visionary.
                 </p>
+                
 
                 </div>
             </div>

@@ -6,7 +6,7 @@
 .admin-wrapper .left-sidebar{
     flex: 2;
     height: 100vh;
-    background: #5ec7eb;
+    background: #74cfee;
 }
 
 .admin-wrapper .left-sidebar ul{
@@ -16,6 +16,7 @@
     color: aliceblue;
 }
 .admin-wrapper .left-sidebar ul li a{
+    text-decoration: none;
     padding: 18px;
     display: block;
     border-bottom: 1px solid darkgreen;
@@ -40,7 +41,7 @@
 table{
     width:100%;
     border-collapse: collapse;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 th ,td{
     padding: 10px;

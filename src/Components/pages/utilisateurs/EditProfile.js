@@ -51,11 +51,12 @@ function editProfile() {
                     </div>
                     <div class="input-box">
                         <span class="details">Password</span>
-                        <input type='text' placeholder="Enter your password" required/>
+                        <input type='password' placeholder="Enter your password" required/>
                     </div>
                     <div class="input-box">
                         <span class="details">ConfirmPassword</span>
-                        <input type='text' placeholder="Re-Enter your Password" required/>
+                        <input type='password' placeholder="Re-Enter your Password" required/>
+                        <i class="bi bi-eye-slash" id="togglePassword"></i>
                     </div>
                 </div>
                 <div class="gender-details">

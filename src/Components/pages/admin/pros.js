@@ -29,17 +29,17 @@ function Pros (){
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Guardiola</td>
-                                <td>Pep</td>
-                                <td>pepnumber1@gmail.com </td>
+                                <td>Scholes</td>
+                                <td>Paula</td>
+                                <td>ScholesPaula2@gmail.com </td>
                                 <td><a href="#" class="edit">ban</a></td>
                                 <td><a href="#" class="publish">remove</a></td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>Mourad</td>
-                                <td>Marvin</td>
-                                <td>okokokokokok@gmai.com</td>
+                                <td>Karam</td>
+                                <td>Karen</td>
+                                <td>KaramKaren1@gmail.com</td>
                                 <td><a href="#" class="edit">ban</a></td>
                                 <td><a href="#" class="publish">remove</a></td>
                             </tr>
@@ -58,9 +58,9 @@ function Pros (){
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Guardiola</td>
-                                <td>Pep</td>
-                                <td>pepnumber1@gmail.com </td>
+                                <td>Hachem</td>
+                                <td>Jeff</td>
+                                <td>HachemJeff@gmail.com </td>
                                 <td><a href="#" class="edit">ban</a></td>
                                 <td><a href="#" class="publish">remove</a></td>
                             </tr>
@@ -68,7 +68,7 @@ function Pros (){
                                 <td>2</td>
                                 <td>Mourad</td>
                                 <td>Marvin</td>
-                                <td>okokokokokok@gmai.com</td>
+                                <td>MouradMarvin@gmail.com</td>
                                 <td><a href="#" class="edit">ban</a></td>
                                 <td><a href="#" class="publish">remove</a></td>
                             </tr>

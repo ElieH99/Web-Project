@@ -36,15 +36,15 @@ function Admin (){
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>This is us siuuuu</td>
-                                <td>Cristiannaa</td>
+                                <td>Lose Weight</td>
+                                <td>Jeff</td>
                                 <td><a href="#" class="edit">edit</a></td>
                                 <td><a href="#" class="delete">delete</a></td>
                                 <td><a href="#" class="publish">publish/hide</a></td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>This is us siuuuu</td>
+                                <td>Toning</td>
                                 <td>Marvin</td>
                                 <td><a href="#" class="edit">edit</a></td>
                                 <td><a href="#" class="delete">delete</a></td>
@@ -69,16 +69,16 @@ function Admin (){
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>This is us siuuuu</td>
-                                <td>Cristiannaa</td>
+                                <td>Balanced</td>
+                                <td>Paula Scholes</td>
                                 <td><a href="#" class="edit">edit</a></td>
                                 <td><a href="#" class="delete">delete</a></td>
                                 <td><a href="#" class="publish">publish/hide</a></td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>This is us siuuuu</td>
-                                <td>Marvin</td>
+                                <td>Lose Fat</td>
+                                <td>Karen Karam</td>
                                 <td><a href="#" class="edit">edit</a></td>
                                 <td><a href="#" class="delete">delete</a></td>
                                 <td><a href="#" class="publish">publish/hide</a></td>

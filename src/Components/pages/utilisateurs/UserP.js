@@ -1,5 +1,7 @@
 import React from 'react'
 import "../../pages/utilisateurs/UserP.css"
+import p from "../../../images/p.jpg"
+
 
 function UserP() {
     return (
@@ -10,47 +12,60 @@ function UserP() {
                 <ul>
                     <li><a href="/user"><i class="fas fa-user"/>My Profile</a></li>
                     <li><a href="/edit-profile"><i class="fas fa-edit"/>Edit Profile</a></li>
-                    <li><a href="#"><i class="fas fa-walking"/>My WorkoutPlan</a></li>
+                    <li><a href="/myWorkout"><i class="fas fa-walking"/>My WorkoutPlan</a></li>
                     <li><a href="#"><i class="fas fa-apple-alt"/>My DietPlan</a></li>
-                    <li><a href=""><i class="fas fa-sign-out-alt"/>LogOut</a></li>
+                    <li><a href="/sign-up"><i class="fas fa-sign-out-alt"/>LogOut</a></li>
                 </ul>
 
             </div>
             
-          <div class="user-content">
-            <h1>User 1</h1>
-            <p>First Name:<input placeholder='FirstName'></input> <br/>
-               Last Name:<input placeholder='LastName'></input> <br/>
-               Date of birth:<input type='date'></input><br/>
-               Sex: <input type='radio' id="gender"/>
-              <label for="Male"> Male </label>   <spacer type="horizontal" width="100" height="100"> | </spacer>
-              <input type="radio" id="Female"/> 
-              <label for="Female"> Female </label><br/>
-              Weight:<input placeholder='Weight in kg'></input> <br/>
-              Height:<input placeholder='Height in cm'></input> <br/>
-              <h3>Program to follow:</h3>
-              <select class="select_workout" id="workouts">
-              <option value="Lose Weight">Lose Weight</option>
-              <option value="Gain Weight">Gain Weight</option>
-              <option value="Stay in Shape">Stay in Shape</option>
-              <option value="BodyBuilding">BodyBuilding</option>
-              <option value='toning'>Toning</option>
-            </select>
-            <button>Confirm</button>
-
-            <h3>Diet to follow:</h3>
-              <select class="select_workout" id="workouts">
-              <option value="Low Calorie">Low Calorie</option>
-              <option value="Low_Carbohydarte">Low-Carbohydarte</option>
-              <option value="Low Fat">Low Fat</option>
-              <option value="Balanced">Balanced</option>
-              <option value='Bulking'>Bulking</option>
-            </select>
-            <button>Confirm</button>
+            <div class="users-content">
+            <div class="change-profile">
+            <div class="tile-edit">Profile</div>
+            <br/>
             
-            </p>
-            
-          </div>
+            <form action='#'>
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type='text' value="Hanna" disabled/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">First Name</span>
+                        <input type='text' value="Elie" disabled/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type='text' value="eliehanna99@gmail.com" disabled/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type='text' value="+961 78 354629" disabled/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date-of-birth</span>
+                        <input type='text' value="18/11/1993" disabled/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Weight</span>
+                        <input type='text'value="72 Kg" disabled/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Height</span>
+                        <input type='text' value="180 cm" disabled/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Gender</span>
+                        <input type='text' value="Male" disabled/>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Id</span>
+                        <input type='text' value="#1" disabled/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
         </div>
        
         </>

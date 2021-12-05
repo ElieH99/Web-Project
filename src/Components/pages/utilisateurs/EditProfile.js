@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import "../../pages/utilisateurs/UserP.css"
 import "../../pages/utilisateurs/EditProfile.css"
 function editProfile() {
+    
     return (
         <>  
         <div class="user-wrapper">
@@ -9,7 +10,7 @@ function editProfile() {
                 <ul>
                     <li><a href="/user"><i class="fas fa-user"/>My Profile</a></li>
                     <li><a href="/edit-profile"><i class="fas fa-edit"/>Edit Profile</a></li>
-                    <li><a href="#"><i class="fas fa-walking"/>My WorkoutPlan</a></li>
+                    <li><a href="/myWorkout"><i class="fas fa-walking"/>My WorkoutPlan</a></li>
                     <li><a href="#"><i class="fas fa-apple-alt"/>My DietPlan</a></li>
                     <li><a href=""><i class="fas fa-sign-out-alt"/>LogOut</a></li>
                 </ul>
@@ -24,7 +25,7 @@ function editProfile() {
                         <span class="details">Last Name</span>
                         <input type='text' placeholder="Enter your last name" required/>
                     </div>
-                    <div class="input-box">
+                    <div class="input-box" >
                         <span class="details">First Name</span>
                         <input type='text' placeholder="Enter your first name" required/>
                     </div>
@@ -58,7 +59,7 @@ function editProfile() {
                     </div>
                 </div>
                 <div class="gender-details">
-                    <input type="radio" name="gender" id="dot-1"/>
+                    <input type="radio" name="gender" id="dot-1" />
                     <input type="radio" name="gender" id="dot-2"/>
                     <input type="radio" name="gender" id="dot-3"/>
                     <span class="gender-title">Gender</span>
@@ -77,8 +78,11 @@ function editProfile() {
                         </label>
                     </div>
                 </div>
+                {/* <div class="button_sub">
+                    <input type="submit" value="Edit"  />
+                </div> */}
                 <div class="button_sub">
-                    <input type="submit" value="Save Changes"/>
+                    <input type="submit" value="Save Changes"  />
                 </div>
             </form>
         </div>

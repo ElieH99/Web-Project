@@ -25,6 +25,7 @@ import Utilisateur from './Components/pages/admin/user';
 import Pros from './Components/pages/admin/pros';
 import createPost from './Components/pages/admin/createPost';
 import editProfile from './Components/pages/utilisateurs/EditProfile';
+import MyWorkout from './Components/pages/utilisateurs/MyWorkout';
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
           <Route path='/pros' component={Pros}/>
           <Route path='/createPost' component={createPost}/>
           <Route path='/edit-profile' component={editProfile}/>
+          <Route path='/myWorkout' component={MyWorkout}/>
         </Switch>
       </Router>
     </>

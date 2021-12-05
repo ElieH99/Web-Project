@@ -18,27 +18,26 @@ function SignUp() {
         inputElement.classList.remove("form__input--error");
         inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
     }
-    
+    function createAccListener(){
+        const loginForm = document.querySelector("#login");
+        const createAccountForm = document.querySelector("#createAccount");
+        loginForm.classList.add("form--hidden");
+        createAccountForm.classList.remove("form--hidden");
+
+    }
+    function alreadyHaveAcc(){
+        const loginForm = document.querySelector("#login");
+        const createAccountForm = document.querySelector("#createAccount");
+        loginForm.classList.remove("form--hidden");
+        createAccountForm.classList.add("form--hidden");
+
+    }
     document.addEventListener("DOMContentLoaded", () => {
-       const loginForm = document.querySelector("#login");
-       const createAccountForm = document.querySelector("#createAccount");
-    
-        document.querySelector("#linkCreateAccount").addEventListener("click", e => {
-            e.preventDefault();
-            loginForm.classList.add("form--hidden");
-            createAccountForm.classList.remove("form--hidden");
-        });
-    
-        document.querySelector("#linkLogin").addEventListener("click", e => {
-            e.preventDefault();
-            loginForm.classList.remove("form--hidden");
-            createAccountForm.classList.add("form--hidden");
-        });
-    
+        const loginForm = document.querySelector("#login");
         loginForm.addEventListener("submit", e => {
             e.preventDefault();
     
-            // Perform your AJAX/Fetch login
+            // Perform your Fetch login
     
             setFormMessage(loginForm, "error", "Invalid username/password combination");
         });
@@ -51,7 +50,7 @@ function SignUp() {
             });
     
             inputElement.addEventListener("input", e => {
-                clearInputError(inputElement);
+                e.clearInputError(inputElement);
             });
         });
     });
@@ -77,7 +76,7 @@ function SignUp() {
             <a href="./user" class="form__link">Forgot your password?</a>
         </p>
         <p class="form__text">
-            <a class="form__link" href="./" id="linkCreateAccount" >Don't have an account? Create an account</a>
+            <a class="form__link" href="#" id="linkCreateAccount" onClick={createAccListener} >Don't have an account? Create an account</a>
         </p>
     </form>
 
@@ -102,7 +101,7 @@ function SignUp() {
         </div>
         <button class="form__button" type="submit">Continue</button>
         <p class="form__text">
-            <a class="form__link" href="./sign-up" id="linkLogin">Already have an account? Sign in</a>
+            <a class="form__link" href="#" id="linkLogin" onClick={alreadyHaveAcc}>Already have an account? Sign in</a>
         </p>
     </form>
 

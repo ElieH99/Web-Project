@@ -1,0 +1,133 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+.workplan{
+    flex: 8;
+    height: 130vh;
+    padding: 40px 100px 100px;
+    background:whitesmoke;
+     
+}
+.workplan .h{
+    /* background: linear-gradient(90deg,rgb(230, 34, 77) 0%,rgb(255, 252, 84)100%); */
+    background: linear-gradient(144deg,#00DDEB,#5B42F3 50%,#AF40FF);;
+    /* color: rgb(116, 68, 247); */
+    color: rgb(219, 254, 255);
+    text-align: center;   
+    border-radius: 150px;
+    
+}
+.workplan .p{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+  .button_align .oui1{
+        float:left;
+        width:33.33%;
+  }
+  .button_align .oui2{
+    width:33.33%;
+    
+}
+.button_align .oui3{
+    width:33.33%;
+    margin-top: -60px;
+    float:right;
+
+}
+
+
+.button_align .b {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 100px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 90px;
+  padding: 19px 24px;
+  text-decoration: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.b:active,
+.b:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .b {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}

@@ -20,7 +20,7 @@ function WorkoutPlans() {
     <button onClick={() =>{
       History.push('./LoseWeight');}}>
     <h2> Lose weight </h2>
-    <p>Losing weight is easier said than done, and there isn’t a magic pill to take off pounds. Instead, you have to burn more calories than you take in</p>
+    <p>Losing weight is easier said than done, and there isn’t a magic pill to take off pounds, you have to burn more calories than you take in.</p>
     </button>
     </div>
 

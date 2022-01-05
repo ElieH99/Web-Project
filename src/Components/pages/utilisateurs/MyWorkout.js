@@ -63,16 +63,16 @@ function MyWorkout(){
                          <tr>
                              <td>1</td>
                              <td>Toning</td>
-                             <td>Elie</td>
-                             <td><time datetime="2021-01-13">January 13, 2021</time></td>
+                             <td>Jeff</td>
+                             <td><time datetime="2021-01-13">January 13, 2022</time></td>
                              <td><a href="#" class="edit">highlight</a></td>
                              <td><a href="#" class="publish">delete</a></td>
                          </tr>
                          <tr>
                              <td>2</td>
                              <td>Muscle Building</td>
-                             <td>Coach</td>
-                             <td>Start Date </td>
+                             <td>X</td>
+                             <td>March 13, 2202 </td>
                              <td><a href="#" class="edit">highlight</a></td>
                              <td><a href="#" class="publish">delete</a></td>
                          </tr>

@@ -11,8 +11,8 @@ function editProfile() {
                     <li><a href="/user"><i class="fas fa-user"/>My Profile</a></li>
                     <li><a href="/edit-profile"><i class="fas fa-edit"/>Edit Profile</a></li>
                     <li><a href="/myWorkout"><i class="fas fa-walking"/>My WorkoutPlan</a></li>
-                    <li><a href="#"><i class="fas fa-apple-alt"/>My DietPlan</a></li>
-                    <li><a href=""><i class="fas fa-sign-out-alt"/>LogOut</a></li>
+                    <li><a href="/myDiet"><i class="fas fa-apple-alt"/>My DietPlan</a></li>
+                    <li><a href="/sign-up"><i class="fas fa-sign-out-alt"/>LogOut</a></li>
                 </ul>
 
             </div>

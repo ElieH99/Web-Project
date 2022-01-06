@@ -1,94 +1,205 @@
-import React from 'react'
-import "../../pages/utilisateurs/MyWorkout.css"
+import React, { useState, Fragment } from "react";
+import { nanoid } from "nanoid";
+import data from "./mock-wdata.json";
+import ReadOnlyRow from "./ReadOnlyRow";
+import EditableRowT from "./EditableRowT";
 
 function MyWorkout(){
-    function myFunction() {
-        var element = document.getElementById("myDIV");
-        element.classList.add("mystyle");
-      }
-
-      function myCreateFunction() {
-        var table = document.getElementById("myTable");
-        var row = table.insertRow(0);
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        var cell3 = row.insertCell(2);
-        var cell4 = row.insertCell(3);
-        var cell5 = row.insertCell(4);
-        cell1.innerHTML = "Number";
-        cell2.innerHTML = "Category";
-        cell3.innerHTML = "Coach";
-        cell4.innerHTML = "StartDate";
-        cell5.innerHTML = <a href="#" class="edit">highlight</a>;
-        
-        
-      }
-      
-      function myDeleteFunction() {
-        document.getElementById("myTable").deleteRow(0);
-      }
-
-
-    return(
-        <>
-        <div class="user-wrapper">
-        <div class="left-sidebar">
-                <ul>
-                    <li><a href="/user"><i class="fas fa-user"/>My Profile</a></li>
-                    <li><a href="/edit-profile"><i class="fas fa-edit"/>Edit Profile</a></li>
-                    <li><a href="#"><i class="fas fa-walking"/>My WorkoutPlan</a></li>
-                    <li><a href="#"><i class="fas fa-apple-alt"/>My DietPlan</a></li>
-                    <li><a href="/sign-up"><i class="fas fa-sign-out-alt"/>LogOut</a></li>
-                </ul>
-
-            </div>
-            <div class="users-content">
-            <div class="change-profile">
-            <div class="admin-content">
-             <button onClick={myCreateFunction}>Add Workout</button>
-             <button onClick={myDeleteFunction}>Delete Top Workout</button>
-             
-
-             <div class="content">
-                 <h2 class="page-title">Workouts I Follow</h2>
-                 <table id="myTable">
-                     <thead>
-                         <th>N</th>
-                         <th>Category</th>
-                         <th>Coach</th>
-                         <th>Start Date</th>
-                         <th colSpan="2">Action</th>
-                     </thead>
-                     <tbody>
-                         <tr>
-                             <td>1</td>
-                             <td>Toning</td>
-                             <td>Jeff</td>
-                             <td><time datetime="2021-01-13">January 13, 2022</time></td>
-                             <td><a href="#" class="edit">highlight</a></td>
-                             <td><a href="#" class="publish">delete</a></td>
-                         </tr>
-                         <tr>
-                             <td>2</td>
-                             <td>Muscle Building</td>
-                             <td>X</td>
-                             <td>March 13, 2202 </td>
-                             <td><a href="#" class="edit">highlight</a></td>
-                             <td><a href="#" class="publish">delete</a></td>
-                         </tr>
-                     </tbody>
-                 </table>
-
-             </div>
-
-         </div>
-
-            </div>
-            
-            </div>
-            </div>
-
-        </>
+    const [contacts, setContacts] = useState(data);
+    const [addFormData, setAddFormData] = useState({
+      plan: "",
+      professional: "",
+      startDate: "",
+    });
+  
+    const [editFormData, setEditFormData] = useState({
+      plan: "",
+      professional: "",
+      startDate: "",
+    });
+  
+    const [editContactId, setEditContactId] = useState(null);
+  
+    const handleAddFormChange = (event) => {
+      event.preventDefault();
+  
+      const fieldName = event.target.getAttribute("name");
+      const fieldValue = event.target.value;
+  
+      const newFormData = { ...addFormData };
+      newFormData[fieldName] = fieldValue;
+  
+      setAddFormData(newFormData);
+    };
+  
+    const handleEditFormChange = (event) => {
+      event.preventDefault();
+  
+      const fieldName = event.target.getAttribute("name");
+      const fieldValue = event.target.value;
+  
+      const newFormData = { ...editFormData };
+      newFormData[fieldName] = fieldValue;
+  
+      setEditFormData(newFormData);
+    };
+  
+    const handleAddFormSubmit = (event) => {
+      event.preventDefault();
+  
+      const newContact = {
+        id: nanoid(),
+        plan: addFormData.plan,
+        professional: addFormData.professional,
+        startDate: addFormData.startDate,
+      };
+  
+      const newContacts = [...contacts, newContact];
+      setContacts(newContacts);
+    };
+  
+    const handleEditFormSubmit = (event) => {
+      event.preventDefault();
+  
+      const editedContact = {
+        id: editContactId,
+        plan: editFormData.plan,
+        professional: editFormData.professional,
+        startDate: editFormData.startDate,
+      };
+  
+      const newContacts = [...contacts];
+  
+      const index = contacts.findIndex((contact) => contact.id === editContactId);
+  
+      newContacts[index] = editedContact;
+  
+      setContacts(newContacts);
+      setEditContactId(null);
+    };
+  
+    const handleEditClick = (event, contact) => {
+      event.preventDefault();
+      setEditContactId(contact.id);
+  
+      const formValues = {
+        plan: contact.plan,
+        professional: contact.professional,
+        startDate: contact.startDate,
+      };
+  
+      setEditFormData(formValues);
+    };
+  
+    const handleCancelClick = () => {
+      setEditContactId(null);
+    };
+  
+    const handleDeleteClick = (contactId) => {
+      const newContacts = [...contacts];
+  
+      const index = contacts.findIndex((contact) => contact.id === contactId);
+  
+      newContacts.splice(index, 1);
+  
+      setContacts(newContacts);
+    };
+  
+    return (
+      <div class="user-wrapper">
+          <div class="left-sidebar">
+                  <ul>
+                      <li><a href="/user"><i class="fas fa-user"/>My Profile</a></li>
+                      <li><a href="/edit-profile"><i class="fas fa-edit"/>Edit Profile</a></li>
+                      <li><a href="/myWorkout"><i class="fas fa-walking"/>My WorkoutPlan</a></li>
+                      <li><a href="myDiet"><i class="fas fa-apple-alt"/>My DietPlan</a></li>
+                      <li><a href="/sign-up"><i class="fas fa-sign-out-alt"/>LogOut</a></li>
+                  </ul>
+  
+              </div>
+              <div class="users-content">
+              <div class="change-profile">
+              <div class="admin-content">
+               <div class="content">
+                   <h2 class="page-title">Workouts I Follow</h2>
+                   <form onSubmit={handleEditFormSubmit}>
+          <table>
+            <thead>
+              <tr>
+                <th>WorkoutPlan</th>
+                <th>Trainer</th>
+                <th>Start Date</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {contacts.map((contact) => (
+                <Fragment>
+                  {editContactId === contact.id ? (
+                    <EditableRowT
+                      editFormData={editFormData}
+                      handleEditFormChange={handleEditFormChange}
+                      handleCancelClick={handleCancelClick}
+                    />
+                  ) : (
+                    <ReadOnlyRow
+                      contact={contact}
+                      handleEditClick={handleEditClick}
+                      handleDeleteClick={handleDeleteClick}
+                    />
+                  )}
+                </Fragment>
+              ))}
+            </tbody>
+          </table>
+        </form>
+        <br/>
+        <h2>Add a WorkoutPlan</h2>
+        <form onSubmit={handleAddFormSubmit}>
+          <select
+            type="text"
+            name="plan"
+            required="required"
+            onChange={handleAddFormChange}
+          >
+          <option></option>
+          <option value="Lose Weight">Lose Weight</option>
+          <option value="Gain Weight">Gain Weight</option>
+          <option value="Stay in Shape">Stay in Shape</option>
+          <option value="Body Building">Body Building</option>
+          <option value="Toning">Toning</option>
+          </select>
+          <select
+            type="text"
+            name="professional"
+            required="required"
+            onChange={handleAddFormChange}
+          >
+          <option></option>
+          <option value='X' >No Trainer</option>
+          <option value="Michel">Michel</option>
+          <option value="Jen">Jen</option>
+          <option value="Jeff">Jeff</option>
+          <option value="Simon">Simon</option>
+          </select>
+          <input
+            type="date"
+            name="startDate"
+            required="required"
+            onChange={handleAddFormChange}
+          />
+          <button type="submit">Add</button>
+        </form>
+      </div>
+  
+          </div>
+  
+          </div>
+  
+          </div>
+              
+          </div>
+    
     )
     
 }

@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "plan": "Low calorie",
+      "professional": "Jose Morinho",
+      "startDate": "2021-12-08"
+      
+    },
+    {
+      "id": 2,
+      "plan": "Balanced",
+      "professional": "X",
+      "startDate": "2021-12-29"
+      
+    }
+  ]

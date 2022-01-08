@@ -36,8 +36,8 @@ return (
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-              <i class="fas fa-home" /> Home 
+              <Link to='/forum' className='nav-links' onClick={closeMobileMenu}>
+              <i class="fab fa-forumbee" /> Forum 
               </Link>
             </li>
             <li className='nav-item'>

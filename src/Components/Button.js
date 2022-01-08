@@ -34,7 +34,7 @@ export const JButton = ({children,type,onClick, buttonStyle, buttonSize}) =>
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" className='btn-mobile'>
+    <a href="https://www.youtube.com/watch?v=Z63w5PefxTQ" target="_blank" className='btn-mobile'>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}

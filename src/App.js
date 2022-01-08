@@ -27,6 +27,7 @@ import createPost from './Components/pages/admin/createPost';
 import editProfile from './Components/pages/utilisateurs/EditProfile';
 import MyWorkout from './Components/pages/utilisateurs/MyWorkout';
 import MyDietPlan from './Components/pages/utilisateurs/MyDietPlan';
+import Forum from './Components/pages/Forum';
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
           <Route path='/edit-profile' component={editProfile}/>
           <Route path='/myWorkout' component={MyWorkout}/>
           <Route path='/myDiet' component={MyDietPlan}/>
+          <Route path="/forum" component={Forum}/>
         </Switch>
       </Router>
     </>

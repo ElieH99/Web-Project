@@ -7,6 +7,13 @@ import { useHistory } from 'react-router';
 
 
 function WorkoutPlans() {
+
+  function handleClick(e) {
+    e.preventDefault();
+    const audio=new Audio("./sounds/sound.mp3");
+    audio.play();
+  }
+
   let History= useHistory();
   return (
     <>
@@ -53,8 +60,9 @@ function WorkoutPlans() {
     </button>
     </div>
       </div>
-</div>
-
+      <br/><br/><br/>
+      <button onClick={handleClick}>oui</button>
+    </div>
     </>
   );
 }

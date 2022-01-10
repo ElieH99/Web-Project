@@ -1,15 +1,16 @@
 import React from 'react';
 import "../admin/Admin.css";
-import {Bouton} from "../../Button";
+import { Link } from 'react-router-dom';
 function Pros (){
     return(
         <>
         <div class="admin-wrapper">
             <div class="left-sidebar">
-                <ul>
-                    <li><a href="/admin">Manage Plans</a></li>
-                    <li><a href="/users">Manage Users</a></li>
-                    <li><a href="/pros">Manage Professionals</a></li>
+            <ul>
+                    <li><Link to="/admin">Manage Plans</Link></li>
+                    <li><Link to="/users">Manage Users</Link></li>
+                    <li><Link to="/pros">Manage Professionals</Link></li>
+                    <li><Link to="/sign-up">LogOut</Link></li>
                 </ul>
 
             </div>
@@ -32,16 +33,16 @@ function Pros (){
                                 <td>Scholes</td>
                                 <td>Paula</td>
                                 <td>ScholesPaula2@gmail.com </td>
-                                <td><a href="#" class="edit">ban</a></td>
-                                <td><a href="#" class="publish">remove</a></td>
+                                <td><Link to="#" class="edit">ban</Link></td>
+                                <td><Link to="#" class="publish">remove</Link></td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Karam</td>
                                 <td>Karen</td>
                                 <td>KaramKaren1@gmail.com</td>
-                                <td><a href="#" class="edit">ban</a></td>
-                                <td><a href="#" class="publish">remove</a></td>
+                                <td><Link to="#" class="edit">ban</Link></td>
+                                <td><Link to="#" class="publish">remove</Link></td>
                             </tr>
                         </tbody>
                     </table>
@@ -61,16 +62,16 @@ function Pros (){
                                 <td>Hachem</td>
                                 <td>Jeff</td>
                                 <td>HachemJeff@gmail.com </td>
-                                <td><a href="#" class="edit">ban</a></td>
-                                <td><a href="#" class="publish">remove</a></td>
+                                <td><Link to="#" class="edit">ban</Link></td>
+                                <td><Link to="#" class="publish">remove</Link></td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Mourad</td>
                                 <td>Marvin</td>
                                 <td>MouradMarvin@gmail.com</td>
-                                <td><a href="#" class="edit">ban</a></td>
-                                <td><a href="#" class="publish">remove</a></td>
+                                <td><Link to="#" class="edit">ban</Link></td>
+                                <td><Link to="#" class="publish">remove</Link></td>
                             </tr>
                         </tbody>
                     </table>

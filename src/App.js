@@ -23,15 +23,17 @@ import UserP from './Components/pages/utilisateurs/UserP';
 import Admin from './Components/pages/admin/Admin';
 import Utilisateur from './Components/pages/admin/user';
 import Pros from './Components/pages/admin/pros';
-import createPost from './Components/pages/admin/createPost';
-import editProfile from './Components/pages/utilisateurs/EditProfile';
+import CreatePost from './Components/pages/admin/createPost';
+import EditProfile from './Components/pages/utilisateurs/EditProfile';
 import MyWorkout from './Components/pages/utilisateurs/MyWorkout';
 import MyDietPlan from './Components/pages/utilisateurs/MyDietPlan';
 import Forum from './Components/pages/Forum';
 
 function App() {
+
   return (
     <>
+    
       <Router>
         <Navbar />
         <Switch>
@@ -56,8 +58,8 @@ function App() {
           <Route path='/admin' component={Admin}/>
           <Route path='/users' component={Utilisateur}/>
           <Route path='/pros' component={Pros}/>
-          <Route path='/createPost' component={createPost}/>
-          <Route path='/edit-profile' component={editProfile}/>
+          <Route path='/createPost' component={CreatePost}/>
+          <Route path='/edit-profile' component={EditProfile}/>
           <Route path='/myWorkout' component={MyWorkout}/>
           <Route path='/myDiet' component={MyDietPlan}/>
           <Route path="/forum" component={Forum}/>
@@ -66,5 +68,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;

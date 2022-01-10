@@ -1,15 +1,27 @@
 import React from 'react';
 import "../admin/Admin.css";
-import {Bouton, Bouton1} from "../../Button";
+import { Link } from 'react-router-dom';
+import { selectCounter } from '../../../redux/userCounter';
+import { selectCounter1 } from '../../../redux/userCounter1';
+import { selectCounter2 } from '../../../redux/userCounter2';
+import { selectCounter3 } from '../../../redux/userCounter3';
+import { selectCounter4 } from '../../../redux/userCounter4';
+import { useSelector } from 'react-redux';
 function Admin (){
+    const c=useSelector(selectCounter);
+    const c1=useSelector(selectCounter1);
+    const c2=useSelector(selectCounter2);
+    const c3=useSelector(selectCounter3);
+    const c4=useSelector(selectCounter4);
     return(
         <>
         <div class="admin-wrapper">
             <div class="left-sidebar">
                 <ul>
-                    <li><a href="/admin">Manage Plans</a></li>
-                    <li><a href="/users">Manage Users</a></li>
-                    <li><a href="/pros">Manage Professionals</a></li>
+                    <li><Link to="/admin">Manage Plans</Link></li>
+                    <li><Link to="/users">Manage Users</Link></li>
+                    <li><Link to="/pros">Manage Professionals</Link></li>
+                    <li><Link to="/sign-up">LogOut</Link></li>
                 </ul>
 
             </div>
@@ -31,6 +43,7 @@ function Admin (){
                             <th>N</th>
                             <th>Category</th>
                             <th>Trainer</th>
+                            <th>Clickec on</th>
                             <th colSpan="3">Action</th>
                         </thead>
                         <tbody>
@@ -38,17 +51,46 @@ function Admin (){
                                 <td>1</td>
                                 <td>Lose Weight</td>
                                 <td>Jeff</td>
-                                <td><a href="#" class="edit">edit</a></td>
-                                <td><a href="#" class="delete">delete</a></td>
-                                <td><a href="#" class="publish">publish/hide</a></td>
+                                <td>{c.valeur}</td>
+                                <td><Link to="#" class="edit">edit</Link></td>
+                                <td><Link to="#" class="delete">delete</Link></td>
+                                <td><Link to="#" class="publish">publish/hide</Link></td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Toning</td>
                                 <td>Marvin</td>
-                                <td><a href="#" class="edit">edit</a></td>
-                                <td><a href="#" class="delete">delete</a></td>
-                                <td><a href="#" class="publish">publish/hide</a></td>
+                                <td>{c1.value}</td>
+                                <td><Link to="#" class="edit">edit</Link></td>
+                                <td><Link to="#" class="delete">delete</Link></td>
+                                <td><Link to="#" class="publish">publish/hide</Link></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Toning</td>
+                                <td>Marvin</td>
+                                <td>{c2.value}</td>
+                                <td><Link to="#" class="edit">edit</Link></td>
+                                <td><Link to="#" class="delete">delete</Link></td>
+                                <td><Link to="#" class="publish">publish/hide</Link></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Toning</td>
+                                <td>Marvin</td>
+                                <td>{c3.value}</td>
+                                <td><Link to="#" class="edit">edit</Link></td>
+                                <td><Link to="#" class="delete">delete</Link></td>
+                                <td><Link to="#" class="publish">publish/hide</Link></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Toning</td>
+                                <td>Marvin</td>
+                                <td>{c4.value}</td>
+                                <td><Link to="#" class="edit">edit</Link></td>
+                                <td><Link to="#" class="delete">delete</Link></td>
+                                <td><Link to="#" class="publish">publish/hide</Link></td>
                             </tr>
                         </tbody>
                     </table>
@@ -71,17 +113,17 @@ function Admin (){
                                 <td>1</td>
                                 <td>Balanced</td>
                                 <td>Paula Scholes</td>
-                                <td><a href="#" class="edit">edit</a></td>
-                                <td><a href="#" class="delete">delete</a></td>
-                                <td><a href="#" class="publish">publish/hide</a></td>
+                                <td><Link to="#" class="edit">edit</Link></td>
+                                <td><Link to="#" class="delete">delete</Link></td>
+                                <td><Link to="#" class="publish">publish/hide</Link></td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Lose Fat</td>
                                 <td>Karen Karam</td>
-                                <td><a href="#" class="edit">edit</a></td>
-                                <td><a href="#" class="delete">delete</a></td>
-                                <td><a href="#" class="publish">publish/hide</a></td>
+                                <td><Link to="#" class="edit">edit</Link></td>
+                                <td><Link to="#" class="delete">delete</Link></td>
+                                <td><Link to="#" class="publish">publish/hide</Link></td>
                             </tr>
                         </tbody>
                     </table>

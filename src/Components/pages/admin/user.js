@@ -1,17 +1,17 @@
 import React from 'react';
 import "../admin/Admin.css";
-import {Bouton} from "../../Button";
+import { Link } from 'react-router-dom';
 function Utilisateur (){
     return(
         <>
         <div class="admin-wrapper">
             <div class="left-sidebar">
-                <ul>
-                    <li><a href="/admin">Manage Plans</a></li>
-                    <li><a href="/users">Manage Users</a></li>
-                    <li><a href="/pros">Manage Professionals</a></li>
+            <ul>
+                    <li><Link to="/admin">Manage Plans</Link></li>
+                    <li><Link to="/users">Manage Users</Link></li>
+                    <li><Link to="/pros">Manage Professionals</Link></li>
+                    <li><Link to="/sign-up">LogOut</Link></li>
                 </ul>
-
             </div>
 
             <div class="admin-content">
@@ -33,16 +33,16 @@ function Utilisateur (){
                                 <td>Hanna</td>
                                 <td>Elie</td>
                                 <td>eliehanna99@gmail.com</td>
-                                <td><a href="#" class="edit">ban</a></td>
-                                <td><a href="#" class="publish">remove</a></td>
+                                <td><Link to="#" class="edit">ban</Link></td>
+                                <td><Link to="#" class="publish">remove</Link></td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Tadros</td>
                                 <td>Michel</td>
                                 <td>micheltadros@gmail.com </td>
-                                <td><a href="#" class="edit">ban</a></td>
-                                <td><a href="#" class="publish">remove</a></td>
+                                <td><Link to="#" class="edit">ban</Link></td>
+                                <td><Link to="#" class="publish">remove</Link></td>
                             </tr>
                         </tbody>
                     </table>

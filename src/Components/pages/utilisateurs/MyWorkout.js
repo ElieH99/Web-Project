@@ -1,10 +1,17 @@
 import React, { useState, Fragment } from "react";
+import { Link } from "react-router-dom";
 import { nanoid } from "nanoid";
 import data from "./mock-wdata.json";
 import ReadOnlyRow from "./ReadOnlyRow";
 import EditableRowT from "./EditableRowT";
+import { useDispatch } from 'react-redux';
+import { logout } from '../../../redux/userSlicer';
+import { logout1 } from '../../../redux/userEdit';
+
+
 
 function MyWorkout(){
+  const dispatch=useDispatch();
     const [contacts, setContacts] = useState(data);
     const [addFormData, setAddFormData] = useState({
       plan: "",
@@ -56,6 +63,9 @@ function MyWorkout(){
   
       const newContacts = [...contacts, newContact];
       setContacts(newContacts);
+
+      
+
     };
   
     const handleEditFormSubmit = (event) => {
@@ -104,19 +114,30 @@ function MyWorkout(){
   
       setContacts(newContacts);
     };
+    const deconnecter=()=>{
+      dispatch(logout());
+  }
+ const deconnecter1=()=>{
+      dispatch(logout1());
+  }
+  const si=()=>{
+      deconnecter();
+      deconnecter1();
+  }
+
   
     return (
       <div class="user-wrapper">
-          <div class="left-sidebar">
-                  <ul>
-                      <li><a href="/user"><i class="fas fa-user"/>My Profile</a></li>
-                      <li><a href="/edit-profile"><i class="fas fa-edit"/>Edit Profile</a></li>
-                      <li><a href="/myWorkout"><i class="fas fa-walking"/>My WorkoutPlan</a></li>
-                      <li><a href="myDiet"><i class="fas fa-apple-alt"/>My DietPlan</a></li>
-                      <li><a href="/sign-up"><i class="fas fa-sign-out-alt"/>LogOut</a></li>
-                  </ul>
-  
-              </div>
+           <div class="left-sidebar">
+                <ul>
+                    <li><Link to="/user"><i class="fas fa-user"/>My Profile</Link></li>
+                     <li><Link to='/edit-profile' ><i class="fas fa-edit"/> Edit Profile</Link></li>
+                    <li><Link to="/myWorkout"><i class="fas fa-walking"/>My WorkoutPlan</Link></li>
+                    <li><Link to="/myDiet"><i class="fas fa-apple-alt"/>My DietPlan</Link></li>
+                    <li><Link to="./sign-up" onClick={si}><i class="fas fa-sign-out-alt"/>LogOut</Link></li>
+                </ul>
+
+            </div>
               <div class="users-content">
               <div class="change-profile">
               <div class="admin-content">

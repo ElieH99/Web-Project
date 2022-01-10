@@ -1,15 +1,16 @@
 import React from 'react';
 import "../admin/Admin.css";
-import {Bouton} from "../../Button";
-function createPost(){
+import { Link } from 'react-router-dom';
+function CreatePost(){
     return(
 <div class="admin-wrapper">
     <div class="left-sidebar">
-        <ul>
-            <li><a href="/admin">Manage Plans</a></li>
-            <li><a href="/users">Manage Users</a></li>
-            <li><a href="/pros">Manage Professionals</a></li>
-        </ul>
+    <ul>
+                    <li><Link to="/admin">Manage Plans</Link></li>
+                    <li><Link to="/users">Manage Users</Link></li>
+                    <li><Link to="/pros">Manage Professionals</Link></li>
+                    <li><Link to="/sign-up">LogOut</Link></li>
+                </ul>
 
     </div>
 
@@ -27,4 +28,4 @@ function createPost(){
 </div>
     )
 }
-export default createPost;
+export default CreatePost;

@@ -56,6 +56,16 @@ const handleSub = (e) => {
             loggedIn:true,
         }));
         history.push('/admin');
+    } 
+    else if(name=="simon23" && email=="simon@gmail.com" && password=="simon"){
+        dispatch(login({
+            name:name,
+            email:email,
+            password:password,
+            loggedIn:true,
+        }));
+        history.push('/professionalP')
+        
     }
     else{
     dispatch(login({

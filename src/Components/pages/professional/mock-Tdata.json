@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "plan": "BodyBuilding",
+      "professional": "3 day Workout focused on gaining muscle mass and power"
+      
+      
+    },
+    {
+      "id": 2,
+      "plan": "Toning",
+      "professional": "3 days Workout focused on cutting fat and exposing muscle to intense activities"
+    
+      
+    }
+  ]

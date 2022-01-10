@@ -28,6 +28,7 @@ import EditProfile from './Components/pages/utilisateurs/EditProfile';
 import MyWorkout from './Components/pages/utilisateurs/MyWorkout';
 import MyDietPlan from './Components/pages/utilisateurs/MyDietPlan';
 import Forum from './Components/pages/Forum';
+import ProfessionalP from './Components/pages/professional/Professional';
 
 function App() {
 
@@ -63,6 +64,7 @@ function App() {
           <Route path='/myWorkout' component={MyWorkout}/>
           <Route path='/myDiet' component={MyDietPlan}/>
           <Route path="/forum" component={Forum}/>
+          <Route path='/professionalP' component={ProfessionalP} />
         </Switch>
       </Router>
     </>
